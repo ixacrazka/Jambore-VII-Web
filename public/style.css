@@ -1,0 +1,38 @@
+.slider-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Maximum width */
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px;
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+
+
+        /* Custom styles for horizontal scroll on mobile */
+        .card-scroll-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .card {
+            display: inline-block;
+            width: 100%;
+            max-width: 300px;
+            margin-right: 16px;
+        }
+        /* Hide horizontal scrollbar but keep scrolling functionality */
+        .card-scroll-container::-webkit-scrollbar {
+            display: none;
+        }
